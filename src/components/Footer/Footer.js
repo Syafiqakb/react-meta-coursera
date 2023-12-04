@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import React from 'react';
 import './Footer.css';
 import Logo from "../../assets/images/logo.png";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer>
       <div className="footer-content">
@@ -12,12 +13,12 @@ const Footer = () => {
         <div className="footer-navigation">
           <h2>Navigation</h2>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/menu">Menu</a></li>
-            <li><a href="/reservations">Reservations</a></li>
-            <li><a href="/order-online">Order Online</a></li>
-            <li><a href="/login">Login</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/menu">Menu</Link></li>
+          <li><Link to="/reservations">Reservations</Link></li>
+          <li><Link to="/order">Order Online</Link></li>
+          <li><Link to="/login">Login</Link></li>
           </ul>
         </div>
         <div className="footer-contact">
@@ -35,6 +36,4 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
