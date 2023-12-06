@@ -1,6 +1,6 @@
 import React from 'react';
 import ListingCard from '../Cards/ListingCard';
-// import Carousel from './Carousel'; // Assuming you have a Carousel component
+import './Sections.css';
 
 import GreekSalad from "../../assets/images/greek salad.jpg";
 import Bruschetta from "../../assets/images/bruchetta.png";
@@ -22,10 +22,6 @@ export default function Listing() {
                  salt and olive oil."/>
                 <ListingCard image={LemonDessert} name="Lemon Dessert" price="$8.50" description="Fresh baked lemon bread coated in salt and sugar. Powdered in citrus
                  and lemon zest."/>
-            </section>
-
-            <section className="listing-carousel">
-                {/* <Carousel /> */}
             </section>
         </section>
     );

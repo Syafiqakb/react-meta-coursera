@@ -1,19 +1,27 @@
 import BookingForm from "../Sections/BookingForm";
-import { useReducer } from "react";
+import { useState, useEffect } from "react";
 import { fetchAPI } from "../../bookingsAPI";
 
 export default function BookingPage() {
-  function updateTimes(date) {
-    return fetchAPI(date);
+  const [availableTimes, setAvailableTimes] = useState([]);
+
+  useEffect(() => {
+    const currentDate = new Date();
+    fetchTimes(currentDate);
+  }, []);
+
+  function fetchTimes(date) {
+    const output = fetchAPI(date);
+    setAvailableTimes(output);
   }
 
-  const output = fetchAPI(new Date());
-
-  const [availableTimes, dispatch] = useReducer(updateTimes, output);
+  function updateTimes(date) {
+    fetchTimes(date);
+  }
 
   return (
     <>
-      <BookingForm availableTimes={availableTimes} updateTimes={dispatch} />
+      <BookingForm availableTimes={availableTimes} updateTimes={updateTimes} />
     </>
   );
 }

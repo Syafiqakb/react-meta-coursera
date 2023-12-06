@@ -1,0 +1,144 @@
+/* Login styling */
+
+/* Pages.css */
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* Add a specific class selector for the button */
+.button-login {
+  width: 100%;
+  padding: 10px;
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add a hover effect for the button */
+.button-login:hover {
+  background-color: #968000;
+  cursor: pointer;
+}
+
+
+/* Order styling */
+
+.order-online-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.order-online-container h2 {
+  text-align: center;
+}
+
+.order-online-container .menu,
+.order-online-container .cart {
+  margin-top: 20px;
+}
+
+.order-online-container h3 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.order-online-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-online-container li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.order-online-container button {
+  background-color: #FFD700;
+  color: black;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.order-online-container button:hover {
+  background-color: #968000;
+}
+
+.order-online-container p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Confirmation style */
+
+.confirmation-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+  }
+
+.reserve-header-text {
+    margin-bottom: 2rem;
+  }
+
+.reserve-header-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+.reserve-header-text h4 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+.redirect-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+.redirect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+
+  .redirect-button:hover {
+    background-color: #af8a05;
+  }

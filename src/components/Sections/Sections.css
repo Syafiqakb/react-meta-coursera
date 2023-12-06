@@ -1,0 +1,178 @@
+/* Head styling */
+
+.header {
+    
+}
+.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #495E57;
+    color: #ffffff;
+    padding: 2rem 5rem 2rem 5rem;
+  }
+
+.hero-text {
+    margin: 0;
+  }
+
+.hero-text h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.hero-text h2 {
+    margin: 0;
+}
+
+.hero-text p {
+    margin-top: 2rem;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: block;
+  }
+
+.action-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+
+.action-button:hover {
+    background-color: #af8a05;
+  }
+
+
+/* Testimonials styling */
+
+.testimonials {
+    padding: 0rem 5rem 2rem 5rem;
+  }
+
+.testimonials-topbar > h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 4rem 0 1rem 0;
+  }
+
+.testimonials-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+    align-items: center;
+  }
+
+.testimonial-card {
+    background-color: #edefee;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+.testimonial-card > img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+  }
+
+
+/* About styling */
+
+.about-us {
+    background-color: #f4ce14;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 5rem 2rem 5rem;
+    min-height: 22rem;
+    grid-gap: 15rem;
+  }
+
+.about-subtext {
+    margin-right: rem;
+  }
+
+.double-image {
+    max-height: 18rem;
+    position: relative;
+    top: 4rem;
+    left: 2rem;
+  }
+
+.double-image > img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.about-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+.about-2 {
+    position: absolute;
+    top: -3.5rem;
+    left: 5rem;
+  }
+
+
+/* Reservation styling */
+
+  .reservation-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .reservation-form div {
+    margin-bottom: 1.5rem;
+  }
+
+  .reservation-form label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .reservation-form input,
+  .reservation-form select,
+  .reservation-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+.reservation-form select {
+    appearance: none;
+  }
+
+.reservation-form small {
+    font-size: 0.8rem;
+    color: #555;
+  }
+
+.reservation-form .action-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+.reservation-form .action-button:hover {
+    background-color: #af8a05;
+  }

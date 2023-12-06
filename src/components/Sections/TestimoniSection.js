@@ -1,8 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import TestimonialCard from '../Cards/TestimonialCard';
-
-// import Carousel from './Carousel'; // Assuming you have a Carousel component
 
 
 export default function Testimonials() {
@@ -22,9 +19,6 @@ export default function Testimonials() {
                 long night of studying. I would definitely order from here again!"/>
             </section>
 
-            <section className="testimonials-carousel">
-                {/* <Carousel /> */}
-            </section>
         </section>
     );
 }

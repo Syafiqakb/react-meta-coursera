@@ -1,4 +1,6 @@
 import Star from '../../assets/images/logo.png';
+import './Cards.css'
+
 
 export default function TestimonialCard(props) {
     return (
