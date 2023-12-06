@@ -17,10 +17,8 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Implement your authentication logic here
     console.log('Username:', username);
     console.log('Password:', password);
-    // You can add your authentication logic, e.g., calling an API, checking credentials, etc.
   };
 
   return (

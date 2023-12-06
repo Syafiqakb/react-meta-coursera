@@ -37,10 +37,8 @@
   }
 }
 
-/* Import the Markazi Text Medium font */
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
 
-/* Import the Karla Regular font */
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 h1 {

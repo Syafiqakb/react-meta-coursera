@@ -1,7 +1,5 @@
 /* Login styling */
 
-/* Pages.css */
-
 .login-container {
   max-width: 400px;
   margin: auto;
@@ -30,7 +28,6 @@ input {
   box-sizing: border-box;
 }
 
-/* Add a specific class selector for the button */
 .button-login {
   width: 100%;
   padding: 10px;
@@ -41,7 +38,6 @@ input {
   cursor: pointer;
 }
 
-/* Add a hover effect for the button */
 .button-login:hover {
   background-color: #968000;
   cursor: pointer;
@@ -78,8 +74,8 @@ input {
 .order-online-container li {
   margin-bottom: 10px;
   display: flex;
-  justify-content: space-between; /* Align items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .order-online-container button {
