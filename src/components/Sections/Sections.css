@@ -87,42 +87,53 @@
 /* About styling */
 
 .about-us {
-    background-color: #f4ce14;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2rem 5rem 2rem 5rem;
-    min-height: 22rem;
-    grid-gap: 15rem;
+  background-color: #f4ce14;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 5rem 2rem 5rem;
+  min-height: 22rem;
+  grid-gap: 15rem;
+  animation: slide-in 1s ease-out;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 .about-subtext {
-    margin-right: rem;
-  }
+  margin-right: 1rem;
+}
 
 .double-image {
-    max-height: 18rem;
-    position: relative;
-    top: 4rem;
-    left: 2rem;
-  }
+  max-height: 18rem;
+  position: relative;
+  top: 4rem;
+  left: 2rem;
+}
 
 .double-image > img {
-    width: 60%;
-    height: 100%;
-    object-fit: cover;
-  }
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
+}
 
-.about-1 {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
+.about-1,
+.about-2 {
+  position: relative;
+}
 
 .about-2 {
-    position: absolute;
-    top: -3.5rem;
-    left: 5rem;
-  }
+  top: -3.5rem;
+  left: 5rem;
+}
+
 
 
 /* Reservation styling */
@@ -176,3 +187,39 @@
 .reservation-form .action-button:hover {
     background-color: #af8a05;
   }
+
+/* Testimonials animation*/
+
+.testimonials {
+  padding: 2rem 5rem 2rem 5rem;
+}
+
+.testimonials-topbar {
+  align-items: center;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.testimonials-topbar > h1 {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials-cards {
+  display: flex;
+  justify-content: space-between;
+  animation: slide-in 1s ease-out;
+}
+
+/* Define the slide-in animation */
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
